@@ -10,6 +10,12 @@ show grants for 'lhe'@'localhost';
 
 use board_db;
 
+-- member_table 생성
+create table member_table
+(
+	id bigint primary key,
+    pw varchar(100)
+);
 -- board_table 생성
 create table board_table
 (
@@ -32,12 +38,6 @@ create table board_file_table
     boardId bigint,
     constraint fk_board_file foreign key(boardId) 
 		references board_table(postId) on delete cascade
-);
--- member_table 생성
-create table member_table
-(
-	id bigint primary key,
-    pw varchar(100)
 );
 
 show variables like 'datadir';
