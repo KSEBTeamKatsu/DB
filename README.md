@@ -1,1 +1,1 @@
-please use DDL.sql
+please use DDL2.sql
