@@ -40,7 +40,10 @@ create table board_file_table
 		references board_table(postId) on delete cascade
 );
 
-
+-- 저장되는 경로 탐색
 show variables like 'datadir';
 
 select * from board_table;
+
+-- table 내용 삭제
+delete from board_table where postId;
