@@ -39,7 +39,10 @@ create table board_file_table
     constraint fk_board_file foreign key(boardId) 
 		references board_table(postId) on delete cascade
 );
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5a9c54ceeccfd418b44ab76b06499da42021020b
 
 show variables like 'datadir';
 
